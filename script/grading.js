@@ -13,6 +13,7 @@ handleGradeButton.addEventListener("click", function (e) {
   if (!isNaN(Parsent)) {
     let result = (Parsent / 100) * dicliarCm;
     show.innerText = "Result: " + result.toFixed(2) + " cm ";
+    document.getElementById("Dicliar-Cm").value = ""; // resetting Dicliar-Cm input
   } else {
     show.innerText = "Please enter valid values.";
   }
