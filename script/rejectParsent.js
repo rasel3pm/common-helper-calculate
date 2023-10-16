@@ -1,7 +1,7 @@
-let handleButton = document.getElementById("button");
+let handleParsentButton = document.getElementById("button");
 let show = document.getElementById("show");
 
-handleButton.addEventListener("click", function (e) {
+handleParsentButton.addEventListener("click", function (e) {
   e.preventDefault();
   let totalItems = document.getElementById("totalItems").value;
   let numRejected = document.getElementById("numRejected").value;
@@ -16,7 +16,7 @@ handleButton.addEventListener("click", function (e) {
 
   if (!isNaN(totalItems) && !isNaN(numRejected) && totalItems !== 0) {
     let result = (numRejected / totalItems) * 100;
-    show.innerText = "Rejection Percentage: " + result + "%";
+    show.innerText = "Rejection Percentage: " + result.toFixed(2) + "%";
   } else {
     show.innerText = "Please enter valid values.";
   }
