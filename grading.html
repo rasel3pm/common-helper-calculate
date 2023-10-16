@@ -20,14 +20,22 @@
             </li>
         </ul>
     </div>
-    <div class="container">
+    <div class="container mt-3 px-4 shadow rounded">
         <h3 class="py-3 text-success">Calculate Grading (cm)</h3>
         <form class="row">
             <div class="col-md-4">
-                <label class="form-label">Type Parsent</label>
-                <input type="number" class="form-control" placeholder="Parsent" id="Parsent">
+                <select class="form-select" aria-label="Default select example" id="Parsent">
+                    <option selected>Select One</option>
+                    <option value="25">25%</option>
+                    <option value="50">50%</option>
+                    <option value="75">75%</option>
+                    <option value="100">100%</option>
+                </select>
             </div>
-            <div class="col-md-4 pt-4">
+            <div class="col-md-4 py-3 py-md-0">
+                <input type="number" class="form-control" placeholder="Dicliar-Cm" id="Dicliar-Cm">
+            </div>
+            <div class="col-md-4">
                 <button class="btn btn-success w-100" id="buttonGrade">Calculate Grad</button>
             </div>
             <div class="col-md-12  pt-4">
